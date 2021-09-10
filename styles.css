@@ -1,0 +1,17 @@
+.nav-list {
+    top: 3.3rem;
+    right: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        top: 4rem;
+        right: 2rem;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .nav-list > a {
+        padding-top: 2rem;
+    }
+}

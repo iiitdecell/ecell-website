@@ -13,54 +13,46 @@
 <body class="flex flex-col min-h-screen">
     <header class="header">
         <nav class="nav">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="flex justify-between m-4">
-                    <div class="flex space-x-7 justify-between w-full">
-                        <div>
-                            <a href="#">
-                                <img src="./assets/logo.jpeg" alt="E-Cell IIITD" class="h-12 w-12 mr-2">
-                            </a>
-                        </div>
-                        <!-- Primary Nav -->
-                        <div class="hidden md:flex items-center space-x-5">
-                            <a href="">Link 1</a>
-                            <a href="">Link 2</a>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu Btn-->
-                    <div class="md:hidden flex items-center">
-                        <button class="outline-none mobile-menu-btn">
-                            <svg class=" w-6 h-6 text-gray-900 hover:text-gray-500" x-show="!showMenu" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
-                    </div>
+            <div class="w-full flex justify-between">
+                <div class="logo-div mt-5 md:mt-10 ml-5 md:ml-20">
+                    <a href="#">
+                        <img src="./assets/logo.jpeg" alt="E-Cell IIITD" class="h-12 w-12">
+                    </a>
                 </div>
-            </div>
-            <!-- Mobile Menu -->
-            <div class="hidden mobile-menu flex justify-center">
-                <ul class="space-y-4">
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                </ul>
+                <button class="outline-none flex justify-center items-center">
+                    <div class="menu-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-blue-300 rounded-full p-3">
+                        <svg class=" w-6 h-6 text-gray-900 hover:text-gray-500" x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="nav-list hidden fixed md:space-x-4 z-10 flex md:flex-row">
+                    <a href="#" class="text-gray-900 hover:text-gray-500"><span class="bg-blue-300 p-2 rounded-lg">About</span></a>
+                    <a href="#" class="text-gray-900 hover:text-gray-500"><span class="bg-blue-300 p-2 rounded-lg">Startups</span></a>
+                    <a href="#" class="text-gray-900 hover:text-gray-500"><span class="bg-blue-300 p-2 rounded-lg">Facilities</span></a>
+                    <a href="#" class="text-gray-900 hover:text-gray-500"><span class="bg-blue-300 p-2 rounded-lg">Events</span></a>
+                    <a href="#" class="text-gray-900 hover:text-gray-500"><span class="bg-blue-300 p-2 rounded-lg">Community</span></a>
+                </div>
+                <button class="outline-none flex justify-center items-center">
+                    <div class="hidden close-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-blue-300 rounded-full p-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M24 3.752l-4.423-3.752-7.771 9.039-7.647-9.008-4.159 4.278c2.285 2.885 5.284 5.903 8.362 8.708l-8.165 9.447 1.343 1.487c1.978-1.335 5.981-4.373 10.205-7.958 4.304 3.67 8.306 6.663 10.229 8.006l1.449-1.278-8.254-9.724c3.287-2.973 6.584-6.354 8.831-9.245z" />
+                        </svg>
+                    </div>
+                </button>
             </div>
         </nav>
     </header>
     <main class="main flex-grow">
-
+        
     </main>
     <footer class="footer">
-        
+
     </footer>
-    <script>
-        const btn = document.querySelector("button.mobile-menu-btn");
-        const menu = document.querySelector(".mobile-menu");
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
