@@ -1,6 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    tab-size: 0;
+}
+
 .nav-list {
     top: 3.3rem;
     right: 9rem;
+}
+
+.about-img {
+    background-image: url('https://via.placeholder.com/350X350');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 350px;
 }
 
 @media screen and (max-width: 768px) {
