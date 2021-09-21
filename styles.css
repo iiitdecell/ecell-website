@@ -1,6 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+.heading {
+    font-family: 'Oswald', sans-serif;
+}
+
 .nav-list {
     top: 3.3rem;
     right: 9rem;
+}
+
+.nav-anim-open {
+    animation: coll-anim-open 0.09s;
+}
+
+@keyframes coll-anim-open {
+    0% {width: 50px;}
+    25% {width: 100px;}
+    50% {width: 200px;}
+    75% {width: 300px;}
+    100% {width: 400px;}
+}
+
+.nav-anim-close {
+    animation: coll-anim-close 0.09s;
+}
+
+@keyframes coll-anim-close {
+    0% {width: 400px;}
+    25% {width: 300px;}
+    50% {width: 200px;}
+    75% {width: 100px;}
+    100% {width: 50px;}
 }
 
 .about-img-mob {
