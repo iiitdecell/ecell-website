@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container w-4/5 p-5">
+        <form action="https://sheetdb.io/api/v1/541dif7dypq7p" method="POST" id="form">
+            <h2 class="w-full text-center">Get in Touch</h2>
+            <div class="row100 relative w-full grid">
+                <div class="col relative w-full">
+                    <div class="inputbox relative w-full">
+                        <input class="absolute w-full border-0 z-10" type="text" required="required" name="data[Name]">
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">Name</span>
+                        <span class="line absolute block w-full"></span>
+                    </div>
+                </div>
+                
+                <div class="col relative w-full">
+                    <div class="inputbox relative w-full">
+                        <input class="absolute w-full border-0 z-10" type="text" required="required" name="data[contact]">
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">contact no.</span>
+                        <span class="line absolute block w-full"></span>
+                    </div>
+                </div>
+            </div>    
+            <div class="row100 relative w-full grid">
+                <div class="col relative w-full">
+                    <div class="inputbox relative w-ful">
+                        <input class="absolute w-full border-0 z-10" type="Email" required="required" name="data[Email]">
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">Email</span>
+                        <span class="line absolute block w-full"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100 relative w-full grid">   
+                <div class="col relative w-full">
+                    <div class="inputbox textarea relative w-ful">
+                        <textarea class="absolute w-full border-0" required="required" name="data[message]"></textarea>
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">Type your message</span>
+                        <span class="line absolute block w-full"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row100 relative w-full grid">
+                <div class="col relative w-full">
+                    <button type="submit" value="Send">Submit</button>
+                </div>
+            </div>
+        </form>    
+    </div>
+</body>
+<script>
+    var form = document.getElementById('form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        // you can put any JS code here
+        alert('success')
+      });
+    });
+  </script>
+</html>
