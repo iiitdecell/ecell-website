@@ -9,48 +9,48 @@
       rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="flex justify-center items-center min-h-screen">
     <div class="container w-4/5 p-5">
         <form action="https://sheetdb.io/api/v1/541dif7dypq7p" method="POST" id="form">
-            <h2 class="w-full text-center">Get in Touch</h2>
+            <h2 class="w-full text-center text-4xl mb-2.5">Get in Touch</h2>
             <div class="row100 relative w-full grid">
                 <div class="col relative w-full">
-                    <div class="inputbox relative w-full">
-                        <input class="absolute w-full border-0 z-10" type="text" required="required" name="data[Name]">
-                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">Name</span>
-                        <span class="line absolute block w-full"></span>
+                    <div class="inputbox relative w-full h-10">
+                        <input class="absolute w-full border-0 z-10 text-lg shadow-none outline-none" type="text" required="required" name="data[Name]">
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none text-lg">Name</span>
+                        <span class="line absolute block w-full bottom-0 rounded-sm pointer-events-none"></span>
                     </div>
                 </div>
                 
-                <div class="col relative w-full">
-                    <div class="inputbox relative w-full">
-                        <input class="absolute w-full border-0 z-10" type="text" required="required" name="data[contact]">
-                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">contact no.</span>
-                        <span class="line absolute block w-full"></span>
+                <div class="col relative w-full ">
+                    <div class="inputbox relative w-full h-10">
+                        <input class="absolute w-full border-0 z-10 text-lg shadow-none outline-none" type="text" required="required" name="data[contact]">
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none text-lg">contact no.</span>
+                        <span class="line absolute block w-full bottom-0 rounded-sm pointer-events-none"></span>
                     </div>
                 </div>
             </div>    
             <div class="row100 relative w-full grid">
-                <div class="col relative w-full">
-                    <div class="inputbox relative w-ful">
-                        <input class="absolute w-full border-0 z-10" type="Email" required="required" name="data[Email]">
-                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">Email</span>
-                        <span class="line absolute block w-full"></span>
+                <div class="col relative w-full ">
+                    <div class="inputbox relative w-ful h-10">
+                        <input class="absolute w-full border-0 z-10 text-lg shadow-none outline-none" type="Email" required="required" name="data[Email]">
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none text-lg">Email</span>
+                        <span class="line absolute block w-full bottom-0 rounded-sm pointer-events-none"></span>
                     </div>
                 </div>
             </div>
             <div class="row100 relative w-full grid">   
-                <div class="col relative w-full">
-                    <div class="inputbox textarea relative w-ful">
-                        <textarea class="absolute w-full border-0" required="required" name="data[message]"></textarea>
-                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none">Type your message</span>
-                        <span class="line absolute block w-full"></span>
+                <div class="col relative w-full ">
+                    <div class="inputbox textarea relative w-full h-10">
+                        <textarea class="absolute w-full border-0 text-lg h-full resize-none shadow-none outline-none" required="required" name="data[message]"></textarea>
+                        <span class="text absolute top-0 left-0 leading-10 pointer-events-none text-lg">Type your message</span>
+                        <span class="line absolute block w-full bottom-0 rounded-sm pointer-events-none"></span>
                     </div>
                 </div>
             </div>
             <div class="row100 relative w-full grid">
                 <div class="col relative w-full">
-                    <button type="submit" value="Send">Submit</button>
+                    <button class="cursor-pointer outline-none text-lg rounded-sm" type="submit" value="Send">Submit</button>
                 </div>
             </div>
         </form>    
