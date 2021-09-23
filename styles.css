@@ -145,6 +145,71 @@
     grid-column: 6 / span 2;
 }
 
+/* form */
+.formcontainer h2 {
+    color: #08e7f7;
+}
+.formcontainer .row100 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.formcontainer .row100 .col {
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.formcontainer .row100 .inputbox {
+    counter-reset: #45f3ff;
+}
+span {
+    color: #08e7f7;
+}
+.formcontainer .row100 .inputbox input,
+.formcontainer .row100 .inputbox .textarea textarea {
+    background: transparent;
+    padding: 0 10px;
+    color: #000;
+}
+.formcontainer .row100 .inputbox .text {
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.formcontainer .row100 .inputbox input:focus + .text,
+.formcontainer .row100 .inputbox input:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+.formcontainer .row100 .inputbox .line {
+    height: 2px;
+    background: #08e7f7;
+    transition: 0.5s;
+}
+.formcontainer .row100 .inputbox input:focus ~ .line,
+.formcontainer .row100 .inputbox input:valid ~ .line {
+    height: 100%;
+}
+.formcontainer .row100 .inputbox .textarea {
+    /*  */
+    height: 100px;
+    padding: 10px 0;
+}
+
+.formcontainer .row100 .inputbox textarea:focus + .text,
+.formcontainer .row100 .inputbox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
+}
+.formcontainer .row100 .inputbox textarea:focus ~ .line,
+.formcontainer .row100 .inputbox textarea:valid ~ .line {
+    height: 100%;
+}
+button[type="submit"] {
+    padding: 7px 35px;
+    background: #45f3ff;
+    color: #000;
+}
+
+/* responsive media controls */
 @media screen and (max-width: 768px) {
     .nav-list {
         flex-direction: column;
