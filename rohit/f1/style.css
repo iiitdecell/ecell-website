@@ -8,61 +8,61 @@ body{
     background: #03080a;
 }
 
-.formcontainer h2{
+.container h2{
     color: #08e7f7;
 }
-.formcontainer .row100{
+.container .row100{
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 
-.formcontainer .row100 .col{
+.container .row100 .col{
     padding: 0 10px;
     margin: 30px 0 10px;
     transition: 0.5s;
 }
-.formcontainer .row100 .inputbox{
+.container .row100 .inputbox{
     counter-reset: #45f3ff;
 }
 span{
     color: #08e7f7;
 }
-.formcontainer .row100 .inputbox input,
-.formcontainer .row100 .inputbox .textarea textarea{
+.container .row100 .inputbox input,
+.container .row100 .inputbox .textarea textarea{
     background: transparent;
     padding: 0 10px;
     color: #000;
 }
-.formcontainer .row100 .inputbox .text{
+.container .row100 .inputbox .text{
     padding: 0 10px;
     transition: 0.5s;
 }
-.formcontainer .row100 .inputbox input:focus + .text,
-.formcontainer .row100 .inputbox input:valid + .text{
+.container .row100 .inputbox input:focus + .text,
+.container .row100 .inputbox input:valid + .text{
     top: -35px;
     left: -10px;
 }
-.formcontainer .row100 .inputbox .line{
+.container .row100 .inputbox .line{
     height: 2px;
     background: #08e7f7;
     transition: 0.5s;
 }
-.formcontainer .row100 .inputbox input:focus ~ .line,
-.formcontainer .row100 .inputbox input:valid ~ .line{
+.container .row100 .inputbox input:focus ~ .line,
+.container .row100 .inputbox input:valid ~ .line{
     height: 100%;
 }
-.formcontainer .row100 .inputbox .textarea{
+.container .row100 .inputbox .textarea{
     /*  */
     height: 100px;
     padding: 10px 0;
 }
 
-.formcontainer .row100 .inputbox textarea:focus + .text,
-.formcontainer .row100 .inputbox textarea:valid + .text{
+.container .row100 .inputbox textarea:focus + .text,
+.container .row100 .inputbox textarea:valid + .text{
     top: -35px;
     left: -10px;
 }
-.formcontainer .row100 .inputbox textarea:focus ~ .line,
-.formcontainer .row100 .inputbox textarea:valid ~ .line{
+.container .row100 .inputbox textarea:focus ~ .line,
+.container .row100 .inputbox textarea:valid ~ .line{
     height: 100%;
 }
 button[type="submit"]
