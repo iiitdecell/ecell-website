@@ -6,10 +6,12 @@ const menu = document.querySelector(".nav-list");
 menu_btn.addEventListener("click", () => {
     close_btn.classList.remove("hidden");
     menu.classList.remove("hidden");
+    menu_btn.classList.add("hidden");
 });
 close_btn.addEventListener("click", () => {
     close_btn.classList.add("hidden");
     menu.classList.add("hidden");
+    menu_btn.classList.remove("hidden");
 });
 
 var form = document.getElementById("form");
