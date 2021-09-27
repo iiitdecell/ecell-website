@@ -97,6 +97,7 @@ SVG Icons - svgicons.sparkk.fr
     -webkit-animation-delay: 0s;
 }
 
+/* hex shaped cards */
 .hex-events-div {
     margin: auto;
     /* margin-top: 50px; */
@@ -105,6 +106,10 @@ SVG Icons - svgicons.sparkk.fr
     grid-auto-rows: 200px;
     grid-gap: 14px;
     padding-bottom: 50px;
+}
+
+.upcoming-events-mobile {
+    display: none;
 }
 
 .hex-div {
@@ -169,6 +174,91 @@ SVG Icons - svgicons.sparkk.fr
 .hex-div:nth-child(10) {
     grid-row-start: 3;
     grid-column: 6 / span 2;
+}
+
+/* members cards */
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+:root {
+    --member-card-height: 65vh;
+    --member-card-width: calc(var(--member-card-height) / 1.5);
+}
+
+.member-container {
+    display: flex;
+}
+
+.member-card {
+    background: #191c29;
+    width: var(--member-card-width);
+    height: var(--member-card-height);
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+}
+
+.member-card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+}
+.member-card:hover:before,
+.member-card:hover:after {
+    animation: none;
+    opacity: 0;
+}
+
+.member-card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+        var(--rotate),
+        #7e0fff,
+        #0fffc1 43%,
+        #7e0fff
+    );
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.member-card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--member-card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--member-card-height) / 6));
+    background-image: linear-gradient(
+        var(--rotate),
+        #5ddcff,
+        #3c67e3 43%,
+        #4e00c2
+    );
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+    100% {
+        --rotate: 360deg;
+    }
 }
 
 /* form */
@@ -236,7 +326,7 @@ button[type="submit"] {
 }
 
 /* responsive media controls */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .nav-list {
         flex-direction: column;
         top: 4rem;
@@ -255,5 +345,40 @@ button[type="submit"] {
 
     .landing-mobile {
         display: flex;
+    }
+
+    .initiative-div {
+        width: 200px;
+        height: 200px;
+    }
+
+    .upcoming-events-desktop {
+        display: none;
+    }
+
+    .hex-div-mob {
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+        -webkit-clip-path: polygon(
+            50% 0%,
+            100% 25%,
+            100% 75%,
+            50% 100%,
+            0% 75%,
+            0% 25%
+        );
+        clip-path: polygon(
+            50% 0%,
+            100% 25%,
+            100% 75%,
+            50% 100%,
+            0% 75%,
+            0% 25%
+        );
+    }
+
+    .upcoming-events-mobile {
+        display: block;
     }
 }
