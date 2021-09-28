@@ -288,8 +288,8 @@
         </section> -->
         <section class="board-members" id="board-members">
             <div class="margin-space">
-                <div class="mx-auto w-full min-h-screen flex justify-center">
-                    <div class="board-members-div flex flex-col items-center mt-10 mb-10">
+                <div class="mx-auto w-full min-h-screen flex justify-center items-center">
+                    <div class="board-members-div flex flex-col items-center mt-16 mb-10">
                         <h1 class="heading text-3xl uppercase">Board Members</h1>
                         <br><br><br>
                         <div class="flex justify-center mx-auto w-full">
@@ -375,9 +375,9 @@
                     </div>
                 </div>
         </section>
-        <section class="expert-team bg-black" id="expert-team">
+        <section class="expert-team bg-black w-full" id="expert-team">
             <div class="margin-space">
-                <div class="mx-auto w-full min-h-screen flex justify-center">
+                <div class="mx-auto w-full min-h-screen flex justify-center items-center">
                     <div class="board-members-div flex flex-col items-center mt-10">
                         <h1 class="heading text-3xl uppercase text-white">Expert Faculty</h1>
                         <br><br><br>
@@ -410,80 +410,85 @@
                                 <div class="board-members-div my-3" data-aos="zoom-in" data-aos-duration="2000">
                                     <img src="https://via.placeholder.com/200X200" alt="Board Member 6"
                                         class="rounded-lg">
-                                </div>   
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
         </section>
-        <section class="get-in-touch bg-white-800 min-h-screen flex justify-center items-center" id="get-in-touch">
-            <div class="form-container w-4/5 p-5">
-                <form action="https://sheetdb.io/api/v1/541dif7dypq7p" method="POST" id="form">
-                    <h2 class="heading uppercase text-3xl text-center">Get in Touch</h2>
-                    <br><br>
-                    <div class="row100 relative w-full grid">
-                        <div class="col relative w-full">
-                            <div class="inputbox relative w-full h-10">
-                                <input
-                                    class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
-                                    type="text" required="required" name="data[Name]">
-                                <span
-                                    class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg text-white">Name</span>
+        <section class="get-in-touch bg-white" id="get-in-touch">
+            <div class="margin-space">
+                <div class="min-h-screen flex justify-center items-center">
+                    <div class="form-container w-full p-5">
+                        <form action="https://sheetdb.io/api/v1/541dif7dypq7p" method="POST" id="form">
+                            <h2 class="heading uppercase text-3xl text-center">Get in Touch</h2>
+                            <br><br>
+                            <div class="row100 relative w-full grid">
+                                <div class="col relative w-full">
+                                    <div class="inputbox relative w-full h-10">
+                                        <input
+                                            class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
+                                            type="text" required="required" name="data[Name]">
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg text-white">Name</span>
 
+                                    </div>
+                                </div>
+
+                                <div class="col relative w-full ">
+                                    <div class="inputbox relative w-full h-10">
+                                        <input
+                                            class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
+                                            type="text" required="required" name="data[contact]">
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg">Contact
+                                            No.</span>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="row100 relative w-full grid">
+                                <div class="col relative w-full ">
+                                    <div class="inputbox relative w-ful h-10">
+                                        <input
+                                            class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
+                                            type="Email" required="required" name="data[Email]">
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg">Email</span>
 
-                        <div class="col relative w-full ">
-                            <div class="inputbox relative w-full h-10">
-                                <input
-                                    class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
-                                    type="text" required="required" name="data[contact]">
-                                <span
-                                    class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg">Contact
-                                    No.</span>
-
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row100 relative w-full grid">
-                        <div class="col relative w-full ">
-                            <div class="inputbox relative w-ful h-10">
-                                <input
-                                    class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
-                                    type="Email" required="required" name="data[Email]">
-                                <span
-                                    class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg">Email</span>
+                            <div class="row100 relative w-full grid">
+                                <div class="col relative w-full ">
+                                    <div class="inputbox textarea relative w-full h-40">
+                                        <textarea
+                                            class="absolute w-full h-full border-0 text-lg h-full resize-none shadow-none outline-none bg-black rounded-lg"
+                                            required="required" name="data[message]"></textarea>
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-10 pointer-events-none text-lg">Your
+                                            Message Here...</span>
 
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row100 relative w-full grid">
-                        <div class="col relative w-full ">
-                            <div class="inputbox textarea relative w-full h-40">
-                                <textarea
-                                    class="absolute w-full h-full border-0 text-lg h-full resize-none shadow-none outline-none bg-black rounded-lg"
-                                    required="required" name="data[message]"></textarea>
-                                <span
-                                    class="form-span text absolute top-0 left-0 leading-10 pointer-events-none text-lg">Type
-                                    your message</span>
-
+                            <div class="row100 relative w-full grid">
+                                <div class="col relative w-full">
+                                    <button class="cursor-pointer outline-none text-lg rounded-lg bg-black"
+                                        type="submit" value="Send">Submit</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                    <div class="row100 relative w-full grid">
-                        <div class="col relative w-full">
-                            <button class="cursor-pointer outline-none text-lg rounded-lg bg-black" type="submit"
-                                value="Send">Submit</button>
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer bg-black text-white">
         <div class="margin-space">
+            <!-- <div class="" style="margin: auto; max-width: 1400px;"> -->
             <div class="flex flex-col justify-center w-full">
-                <div class="flex flex-col md:flex-row justify-between w-full m-10">
+                <div class="flex flex-col md:flex-row justify-between m-10">
                     <div class="flex flex-col w-full md:w-1/3">
                         <div class="logo">
                             <a href="#">
