@@ -206,6 +206,14 @@ SVG Icons - svgicons.sparkk.fr
     --member-card-height: 45vh;
     --member-card-width: calc(var(--member-card-height) / 1.5);
 }
+.board-members{
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
 
 .member-card {
     background: #191c29;
@@ -288,10 +296,10 @@ SVG Icons - svgicons.sparkk.fr
 
 /* form */
 .form-container h2 {
-    color: #08e7f7;
+    color: black;
 }
 .form-container .row100 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .form-container .row100 .col {
@@ -300,46 +308,35 @@ SVG Icons - svgicons.sparkk.fr
     transition: 0.5s;
 }
 
-.form-container .row100 .inputbox {
-    counter-reset: #45f3ff;
-}
 
-.form-span {
-    color: #08e7f7;
-}
+
 
 .form-container .row100 .inputbox input,
-.form-container .row100 .inputbox .textarea textarea {
-    background: transparent;
+.form-container .row100 .inputbox textarea {
+    /* background: transparent; */
     padding: 0 10px;
-    color: #000;
+    color:white;;
 }
 
 .form-container .row100 .inputbox .text {
     padding: 0 10px;
     transition: 0.5s;
+    z-index: 1;
+    color: white;
 }
 
 .form-container .row100 .inputbox input:focus + .text,
 .form-container .row100 .inputbox input:valid + .text {
     top: -35px;
     left: -10px;
+    color: black;
 }
 
-.form-container .row100 .inputbox .line {
-    height: 2px;
-    background: #08e7f7;
-    transition: 0.5s;
-}
 
-.form-container .row100 .inputbox input:focus ~ .line,
-.form-container .row100 .inputbox input:valid ~ .line {
-    height: 100%;
-}
 
 .form-container .row100 .inputbox .textarea {
     /*  */
-    height: 100px;
+    height: 120px;
     padding: 10px 0;
 }
 
@@ -347,6 +344,7 @@ SVG Icons - svgicons.sparkk.fr
 .form-container .row100 .inputbox textarea:valid + .text {
     top: -35px;
     left: -10px;
+    color: black;
 }
 
 .form-container .row100 .inputbox textarea:focus ~ .line,
@@ -356,8 +354,8 @@ SVG Icons - svgicons.sparkk.fr
 
 button[type="submit"] {
     padding: 7px 35px;
-    background: #45f3ff;
-    color: #000;
+    background: black;
+    color:white;
 }
 
 /* responsive media controls */
