@@ -127,7 +127,7 @@ SVG Icons - svgicons.sparkk.fr
     padding-bottom: 50px;
 }
 
-.upcoming-events-mobile {
+.initiatives-mobile {
     display: none;
 }
 
@@ -196,7 +196,31 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 /* members cards */
+.board-member-div {
+    /* position: relative; */
+    height: 200px;
+    width: 200px;
+}
 
+.board-member-info {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
+    background: rgba(36, 62, 206, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.board-member-div:hover .board-member-info {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* form */
 .form-container h2 {
@@ -284,12 +308,12 @@ button[type="submit"] {
         display: flex;
     }
 
-    .initiative-div {
+    .upcoming-events-div {
         width: 200px;
         height: 200px;
     }
 
-    .upcoming-events-desktop {
+    .initiatives-desktop {
         display: none;
     }
 
@@ -315,7 +339,7 @@ button[type="submit"] {
         );
     }
 
-    .upcoming-events-mobile {
+    .initiatives-mobile {
         display: block;
     }
 }
