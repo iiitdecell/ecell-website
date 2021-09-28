@@ -193,12 +193,8 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 :root {
-    --member-card-height: 65vh;
+    --member-card-height: 45vh;
     --member-card-width: calc(var(--member-card-height) / 1.5);
-}
-
-.member-container {
-    display: flex;
 }
 
 .member-card {
@@ -207,7 +203,8 @@ SVG Icons - svgicons.sparkk.fr
     height: var(--member-card-height);
     font-size: 1.5em;
     color: rgb(88 199 250 / 0%);
-    cursor: pointer;
+    cursor: none;
+    /* background: url(ss.jpg); */
 }
 
 .member-card:hover {
@@ -218,6 +215,15 @@ SVG Icons - svgicons.sparkk.fr
 .member-card:hover:after {
     animation: none;
     opacity: 0;
+}
+
+.member-card h2 {
+    left: 66px;
+    top: 25px;
+}
+.member-card .icon {
+    top: 150px;
+    right: 80px;
 }
 
 .member-card::before {
@@ -252,9 +258,9 @@ SVG Icons - svgicons.sparkk.fr
     filter: blur(calc(var(--member-card-height) / 6));
     background-image: linear-gradient(
         var(--rotate),
-        #5ddcff,
-        #3c67e3 43%,
-        #4e00c2
+        #7e0fff,
+        #0fffc1 43%,
+        #7e0fff
     );
     opacity: 1;
     transition: opacity 0.5s;
@@ -271,61 +277,61 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 /* form */
-.formcontainer h2 {
+.form-container h2 {
     color: #08e7f7;
 }
-.formcontainer .row100 {
+.form-container .row100 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.formcontainer .row100 .col {
+.form-container .row100 .col {
     padding: 0 10px;
     margin: 30px 0 10px;
     transition: 0.5s;
 }
-.formcontainer .row100 .inputbox {
+.form-container .row100 .inputbox {
     counter-reset: #45f3ff;
 }
 span {
     color: #08e7f7;
 }
-.formcontainer .row100 .inputbox input,
-.formcontainer .row100 .inputbox .textarea textarea {
+.form-container .row100 .inputbox input,
+.form-container .row100 .inputbox .textarea textarea {
     background: transparent;
     padding: 0 10px;
     color: #000;
 }
-.formcontainer .row100 .inputbox .text {
+.form-container .row100 .inputbox .text {
     padding: 0 10px;
     transition: 0.5s;
 }
-.formcontainer .row100 .inputbox input:focus + .text,
-.formcontainer .row100 .inputbox input:valid + .text {
+.form-container .row100 .inputbox input:focus + .text,
+.form-container .row100 .inputbox input:valid + .text {
     top: -35px;
     left: -10px;
 }
-.formcontainer .row100 .inputbox .line {
+.form-container .row100 .inputbox .line {
     height: 2px;
     background: #08e7f7;
     transition: 0.5s;
 }
-.formcontainer .row100 .inputbox input:focus ~ .line,
-.formcontainer .row100 .inputbox input:valid ~ .line {
+.form-container .row100 .inputbox input:focus ~ .line,
+.form-container .row100 .inputbox input:valid ~ .line {
     height: 100%;
 }
-.formcontainer .row100 .inputbox .textarea {
+.form-container .row100 .inputbox .textarea {
     /*  */
     height: 100px;
     padding: 10px 0;
 }
 
-.formcontainer .row100 .inputbox textarea:focus + .text,
-.formcontainer .row100 .inputbox textarea:valid + .text {
+.form-container .row100 .inputbox textarea:focus + .text,
+.form-container .row100 .inputbox textarea:valid + .text {
     top: -35px;
     left: -10px;
 }
-.formcontainer .row100 .inputbox textarea:focus ~ .line,
-.formcontainer .row100 .inputbox textarea:valid ~ .line {
+.form-container .row100 .inputbox textarea:focus ~ .line,
+.form-container .row100 .inputbox textarea:valid ~ .line {
     height: 100%;
 }
 button[type="submit"] {

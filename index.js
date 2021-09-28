@@ -28,5 +28,6 @@ form.addEventListener("submit", (e) => {
         .then((html) => {
             // you can put any JS code here
             alert("success");
+            document.getElementById("form").reset();
         });
 });
