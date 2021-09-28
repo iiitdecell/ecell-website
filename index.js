@@ -1,5 +1,7 @@
+// animate on scroll
 AOS.init();
 
+// nav menu
 const menu_btn = document.querySelector(".menu-icon");
 const close_btn = document.querySelector(".close-icon");
 const menu = document.querySelector(".nav-list");
@@ -14,6 +16,7 @@ close_btn.addEventListener("click", () => {
     menu_btn.classList.remove("hidden");
 });
 
+// form
 var form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
