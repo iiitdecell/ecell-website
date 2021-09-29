@@ -195,36 +195,14 @@ SVG Icons - svgicons.sparkk.fr
     grid-column: 6 / span 2;
 }
 
-/* members cards */
-.board-member-div {
-    /* position: relative; */
-    height: 200px;
-    width: 200px;
-}
-
-.board-member-info {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* right: 0; */
-    background: rgba(36, 62, 206, 0.6);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-
-.board-member-div:hover .board-member-info {
-    visibility: visible;
-    opacity: 1;
+/* members */
+.team-mob {
+    display: none;
 }
 
 /* form */
 .form-container h2 {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .form-container .row100 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -243,21 +221,21 @@ SVG Icons - svgicons.sparkk.fr
 .form-container .row100 .inputbox textarea {
     /* background: transparent; */
     padding: 0 10px;
-    color:white;;
+    color:rgb(0, 0, 0);;
 }
 
 .form-container .row100 .inputbox .text {
     padding: 0 10px;
     transition: 0.5s;
     z-index: 1;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .form-container .row100 .inputbox input:focus + .text,
 .form-container .row100 .inputbox input:valid + .text {
     top: -35px;
     left: -10px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -272,7 +250,7 @@ SVG Icons - svgicons.sparkk.fr
 .form-container .row100 .inputbox textarea:valid + .text {
     top: -35px;
     left: -10px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .form-container .row100 .inputbox textarea:focus ~ .line,
@@ -282,8 +260,8 @@ SVG Icons - svgicons.sparkk.fr
 
 button[type="submit"] {
     padding: 7px 35px;
-    background: black;
-    color:white;
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
 }
 
 /* responsive media controls */
@@ -341,5 +319,17 @@ button[type="submit"] {
 
     .initiatives-mobile {
         display: block;
+    }
+
+    .nav-list-footer {
+        flex-wrap: wrap;
+    }
+
+    .team-desktop {
+        display: none;
+    }
+
+    .team-mob {
+        display: flex;
     }
 }

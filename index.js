@@ -31,3 +31,50 @@ form.addEventListener("submit", (e) => {
             document.getElementById("form").reset();
         });
 });
+
+// carousels
+const swiper = new Swiper(".swiper-member", {
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 4,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+})
+
+const swiper_exec = new Swiper(".swiper-exec", {
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 4,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+})
+
+const swiper_mob = new Swiper(".swiper-member-mob", {
+    direction: "horizontal",
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+})
+
+const swiper_exec_mob = new Swiper(".swiper-exec-mob", {
+    direction: "horizontal",
+    loop: true,
+    spaceBetween: 30,
+    slidesPerView: 1,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+})
