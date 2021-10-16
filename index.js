@@ -42,6 +42,10 @@ const swiper = new Swiper(".swiper-member", {
         delay: 2500,
         disableOnInteraction: true,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 })
 
 const swiper_exec = new Swiper(".swiper-exec", {
@@ -52,6 +56,10 @@ const swiper_exec = new Swiper(".swiper-exec", {
     autoplay: {
         delay: 2500,
         disableOnInteraction: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 })
 

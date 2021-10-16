@@ -200,6 +200,24 @@ SVG Icons - svgicons.sparkk.fr
     display: none;
 }
 
+.swiper-button-prev, .swiper-button-next {
+    color: white;
+    border-radius: 30%;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-left: -20px;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    color: black;
+    background-color: white;
+}
+
+.swiper-button-next {
+    margin-right: -20px;
+}
+
 /* form */
 .form-container h2 {
     color: rgb(255, 255, 255);
