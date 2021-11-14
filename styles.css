@@ -130,14 +130,16 @@ SVG Icons - svgicons.sparkk.fr
 
 .initiatives-img {
     width: 100%;
-    max-width: 250px;
-    height: auto;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .events-img {
     width: 100%;
-    max-width: 250px;
-    height: auto;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* members */
