@@ -46,7 +46,7 @@ const swiper = new Swiper(".swiper-member", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-})
+});
 
 const swiper_exec = new Swiper(".swiper-exec", {
     direction: "horizontal",
@@ -61,7 +61,7 @@ const swiper_exec = new Swiper(".swiper-exec", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-})
+});
 
 const swiper_mob = new Swiper(".swiper-member-mob", {
     direction: "horizontal",
@@ -73,7 +73,7 @@ const swiper_mob = new Swiper(".swiper-member-mob", {
         delay: 2500,
         disableOnInteraction: true,
     },
-})
+});
 
 const swiper_exec_mob = new Swiper(".swiper-exec-mob", {
     direction: "horizontal",
@@ -85,4 +85,59 @@ const swiper_exec_mob = new Swiper(".swiper-exec-mob", {
         delay: 2500,
         disableOnInteraction: true,
     },
-})
+});
+
+// card animation
+var perfectCard = document.querySelector(".perfect-card");
+var playing = false;
+perfectCard.addEventListener("click", function () {
+    if (playing) return;
+
+    playing = true;
+    anime({
+        targets: perfectCard,
+        scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 250 }],
+        rotateY: { value: "+=180", delay: 200 },
+        easing: "easeInOutSine",
+        duration: 400,
+        complete: function (anim) {
+            playing = false;
+        },
+    });
+});
+
+var pitchCard = document.querySelector(".pitch-card");
+var playing = false;
+pitchCard.addEventListener("click", function () {
+    if (playing) return;
+
+    playing = true;
+    anime({
+        targets: pitchCard,
+        scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 250 }],
+        rotateY: { value: "+=180", delay: 200 },
+        easing: "easeInOutSine",
+        duration: 400,
+        complete: function (anim) {
+            playing = false;
+        },
+    });
+});
+
+var scaleCard = document.querySelector(".scale-card");
+var playing = false;
+scaleCard.addEventListener("click", function () {
+    if (playing) return;
+
+    playing = true;
+    anime({
+        targets: scaleCard,
+        scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 100 }],
+        rotateY: { value: "+=180", delay: 100 },
+        easing: "easeInOutSine",
+        duration: 400,
+        complete: function (anim) {
+            playing = false;
+        },
+    });
+});
