@@ -124,23 +124,23 @@ pitchCard.addEventListener("click", function () {
     });
 });
 
-var scaleCard = document.querySelector(".scale-card");
-var playing = false;
-scaleCard.addEventListener("click", function () {
-    if (playing) return;
+// var scaleCard = document.querySelector(".scale-card");
+// var playing = false;
+// scaleCard.addEventListener("click", function () {
+//     if (playing) return;
 
-    playing = true;
-    anime({
-        targets: scaleCard,
-        scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 100 }],
-        rotateY: { value: "+=180", delay: 100 },
-        easing: "easeInOutSine",
-        duration: 400,
-        complete: function (anim) {
-            playing = false;
-        },
-    });
-});
+//     playing = true;
+//     anime({
+//         targets: scaleCard,
+//         scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 100 }],
+//         rotateY: { value: "+=180", delay: 100 },
+//         easing: "easeInOutSine",
+//         duration: 400,
+//         complete: function (anim) {
+//             playing = false;
+//         },
+//     });
+// });
 
 var foundersCard = document.querySelector(".founders-card");
 var playing = false;
