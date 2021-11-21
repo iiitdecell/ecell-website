@@ -88,14 +88,14 @@ const swiper_exec_mob = new Swiper(".swiper-exec-mob", {
 });
 
 // card animation
-var perfectCard = document.querySelector(".perfect-card");
+var ideathonCard = document.querySelector(".ideathon-card");
 var playing = false;
-perfectCard.addEventListener("click", function () {
+ideathonCard.addEventListener("click", function () {
     if (playing) return;
 
     playing = true;
     anime({
-        targets: perfectCard,
+        targets: ideathonCard,
         scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 250 }],
         rotateY: { value: "+=180", delay: 200 },
         easing: "easeInOutSine",
@@ -132,6 +132,42 @@ scaleCard.addEventListener("click", function () {
     playing = true;
     anime({
         targets: scaleCard,
+        scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 100 }],
+        rotateY: { value: "+=180", delay: 100 },
+        easing: "easeInOutSine",
+        duration: 400,
+        complete: function (anim) {
+            playing = false;
+        },
+    });
+});
+
+var foundersCard = document.querySelector(".founders-card");
+var playing = false;
+foundersCard.addEventListener("click", function () {
+    if (playing) return;
+
+    playing = true;
+    anime({
+        targets: foundersCard,
+        scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 100 }],
+        rotateY: { value: "+=180", delay: 100 },
+        easing: "easeInOutSine",
+        duration: 400,
+        complete: function (anim) {
+            playing = false;
+        },
+    });
+});
+
+var openHouseCard = document.querySelector(".open-house-card");
+var playing = false;
+openHouseCard.addEventListener("click", function () {
+    if (playing) return;
+
+    playing = true;
+    anime({
+        targets: openHouseCard,
         scale: [{ value: 1 }, { value: 1.4 }, { value: 1, delay: 100 }],
         rotateY: { value: "+=180", delay: 100 },
         easing: "easeInOutSine",

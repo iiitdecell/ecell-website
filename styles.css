@@ -27,7 +27,7 @@ section {
 }
 
 .main-img {
-    background-image: url('./assets/main.jpg');
+    background-image: url('./assets/main.png');
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -148,24 +148,24 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 /* cards */
-.scale-card, .pitch-card, .perfect-card {
+.scale-card, .pitch-card, .ideathon-card, .founders-card, .open-house-card {
     position: relative;
     transform-style: preserve-3d;
     cursor: pointer;
 }
 
-.scale-front, .scale-back, .pitch-front, .pitch-back, .perfect-front, .perfect-back {
+.scale-front, .scale-back, .pitch-front, .pitch-back, .ideathon-front, .ideathon-back, .founders-front, .founders-back, .open-house-front, .open-house-back {
     backface-visibility: hidden;
 }
 
-.scale-back, .pitch-back, .perfect-back {
+.scale-back, .pitch-back, .ideathon-back, .founders-back, .open-house-back {
     position: absolute;
     top: 0;
     left: 0;
     transform: rotateY(180deg);
 }
 
-.pitch-back, .perfect-back {
+.pitch-back, .ideathon-back, .founders-back, .open-house-back {
     background-color: white;
 }
 
