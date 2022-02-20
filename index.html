@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Primary Meta Tags -->
+    <title>E-Cell IIITD</title>
+    <meta name="title" content="E-Cell IIITD">
+    <meta name="description" content="Entrepreneurship Cell of Indraprastha Institute of Information Technology Delhi">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecell-iiitd.netlify.app/">
+    <meta property="og:title" content="E-Cell IIITD">
+    <meta property="og:description"
+        content="Entrepreneurship Cell of Indraprastha Institute of Information Technology Delhi">
+    <meta property="og:image" content="./assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ecell-iiitd.netlify.app/">
+    <meta property="twitter:title" content="E-Cell IIITD">
+    <meta property="twitter:description"
+        content="Entrepreneurship Cell of Indraprastha Institute of Information Technology Delhi">
+    <meta property="twitter:image" content="./assets/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Welcome to E-Cell IIITD</title>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <header class="header z-10">
+        <nav class="nav">
+            <div class="w-full flex justify-between">
+                <div class="logo-div mt-5 md:mt-10 ml-5 md:ml-20">
+                    <a href="#home">
+                        <img src="./assets/logo.png" alt="E-Cell IIITD" class="h-12 w-12 rounded-full">
+                    </a>
+                </div>
+                <button class="outline-none flex justify-center items-center">
+                    <div class="menu-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-black rounded-full p-3">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none"
+                                d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z">
+                            </path>
+                        </svg>
+                    </div>
+                </button>
+                <div class="nav-list hidden fixed md:space-x-4 z-10 flex md:flex-row">
+                    <a href="#about" class="text-white hover:text-black"><span
+                            class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">About</span></a>
+                    <a href="#initiatives" class="text-white hover:text-black"><span
+                            class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Initiatives</span></a>
+                    <a href="#events" class="text-white hover:text-black"><span
+                            class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Events</span></a>
+                    <a href="#team" class="text-white hover:text-black"><span
+                            class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Team</span></a>
+                    <a href="#getintouch" class="text-white hover:text-black"><span
+                            class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Get
+                            In Touch</span></a>
+                </div>
+                <button class="outline-none flex justify-center items-center">
+                    <div
+                        class="hidden close-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-black rounded-full p-3">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08
+							c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469
+							c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304
+							c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="main flex-grow">
+        <section class="main" id="home">
+            <div class="">
+                <div class="main-div">
+                    <div class="main-img"></div>
+                    <div class="quote heading absolute top-60 right-14 md:right-20 w-3/4 md:w-1/2 text-xl md:text-2xl">
+                        Twenty years from now, you will be more disappointed by the things that you didn’t do than by
+                        the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade
+                        winds in your sails. Explore. Dream. Discover.”
+                        <br>
+                        Mark Twain
+                    </div>
+                </div>
+                <div>
+                    <a href="#about">
+                        <svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="landing-mobile hidden" id="about home">
+            <div class="min-h-screen flex justify-center">
+                <div class="landing-div-mob flex flex-col">
+                    <div class="about-img-mob w-full flex justify-center mt-16" data-aos="zoom-in"
+                        data-aos-duration="2000">
+                        <img src="./assets/main.jpg" alt="About Image" class="rounded-lg main-sm">
+                    </div>
+                    <div class="about-mob m-10" data-aos="zoom-in" data-aos-duration="2000">
+                        <p class="font-bold text-center">"An entrepreneur is an individual who identifies a need in
+                            the marketplace and works to
+                            fulfil it." <br> - Marry K.Pratt</p>
+                        <br>
+                        
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="about" id="about">
+            <div class="margin-space">
+                <div class="about min-h-screen mx-auto w-full flex justify-center items-center">
+                    <div class="about-div mt-10 flex flex-col items-center">
+                        <h1 class="heading text-3xl uppercase" data-aos="zoom-in" data-aos-duration="2000">
+                            About Us</h1>
+                        <br><br>
+                        <div class="about-div flex flex-wrap justify-center mx-10">
+                            <p class="text-center text-sm md:text-xl mb-5" data-aos="zoom-in" data-aos-duration="2000">
+                                The 21st century has made us all realise the importance of developing and investing in
+                                startups that work upon adapting to evolving technologies and creating solutions for a
+                                better future.
+                                At a global level, India is emerging as one of the biggest startup ecosystems.
+                                Thus, following upon these footsteps we the Entrepreneurship Cell (E-Cell) of IIITD is a
+                                group consisting of the students of IIITD committed to foster the entrepreneurial spirit
+                                amongst the students by publishing a weekly Newsletter, organising Founder's & Wisdom
+                                talk,
+                                spreading awareness by posting insightful as well as informative content related to
+                                entrepreneurship and organising events like PitchCafe, Ideathon, the Perfect Escape,
+                                Scaleup
+                                and many more.
+                            </p>
+                            <br><br>
+                            <a href="#getintouch" data-aos="flip-left" data-aos-duration="2000">
+                                <button
+                                    class="py-3 px-4 rounded-lg bg-black text-white transform transition duration-700 delay-50 hover:bg-white hover:text-black hover:border-black border">
+                                    Get In Touch
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="initiatives bg-black" id="initiatives">
+            <div class="margin-space">
+                <div class="initiatives min-h-screen mx-auto w-full flex justify-center items-center">
+                    <div class="initiatives-div mt-10 flex flex-col items-center">
+                        <h1 class="heading text-3xl uppercase text-white" data-aos="zoom-in" data-aos-duration="2000">
+                            Initiatives</h1>
+                        <br><br><br>
+                        <div class="events-div flex flex-wrap justify-center">
+                            <div class="ideathon-card">
+                                <div class="m-3 ideathon-front" data-aos="flip-left" data-aos-duration="2000">
+                                    <img src="./assets/initiatives/ideathon.png" alt="Ideathon"
+                                        class="rounded-lg initiatives-img">
+                                </div>
+                                <div class="ideathon-back p-5 rounded-lg flex justify-center items-center m-4">
+                                    <p class="text-center">
+                                        Every crisis is an opportunity in disguise. The advent of COVID plunged the
+                                        world into chaos, but how we perceive this situation depends on our outlook.
+                                        Ideathon provides a platform to find innovative and lucrative solutions to
+                                        problems due to COVID and other real-world issues it mitigates.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="pitch-card">
+                                <div class="m-3 pitch-front" data-aos="flip-left" data-aos-duration="2000">
+                                    <img src="./assets/initiatives/pitch-cafe.jpg" alt="Pitch Cafe"
+                                        class="rounded-lg initiatives-img">
+                                </div>
+                                <div class="pitch-back p-5 rounded-lg flex justify-center items-center m-4">
+                                    <p class="text-center">
+                                        An event that will require you to jog your mind and bring forth the best
+                                        problem-solving skills you have. Identify a real-life problem, build your idea
+                                        around it, weigh its pros and cons and figure out the most creative yet
+                                        lucrative
+                                        solution to tackle it to gain the upper hand in this event.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="founders-card">
+                                <div class="m-3 founders-front" data-aos="flip-left" data-aos-duration="2000">
+                                    <img src="./assets/initiatives/founders-talk.png" alt="Founders Talk"
+                                        class="rounded-lg initiatives-img">
+                                </div>
+                                <div class="founders-back p-5 rounded-lg flex justify-center items-center m-4">
+                                    <p class="text-center">
+                                        No mountain can be scaled within a day. Founder's talk exposes the budding
+                                        entrepreneurs towards the harsh realities of entrepreneurship, the challenges
+                                        they faced when they started their venture and their goals which kept them on
+                                        their path to success.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="open-house-card">
+                                <div class="m-3 open-house-front" data-aos="flip-left" data-aos-duration="2000">
+                                    <img src="./assets/initiatives/open-house.jpg" alt="Open House"
+                                        class="rounded-lg initiatives-img">
+                                </div>
+                                <div class="open-house-back p-5 rounded-lg flex justify-center items-center m-4">
+                                    <p class="text-center">
+                                        A novel concept introduced by E-Cell for all the aspiring entrepreneurs to get
+                                        their queries ranging from property rights, funding etc., resolved by a panel
+                                        composed of experienced entrepreneurs and experts of this domain.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="snack-card">
+                                <div class="m-3 snack-front" data-aos="flip-left" data-aos-duration="2000">
+                                    <img src="./assets/initiatives/snackchat.png" alt="Snack Chat"
+                                        class="rounded-lg initiatives-img">
+                                </div>
+                                <div class="snack-back p-5 rounded-lg flex justify-center items-center m-4">
+                                    <p class="text-center">
+                                        An offline discussion meet where like-minded people sit together to discuss
+                                        different topics related to Entrepreneurship and try to solve different
+                                        problems, which seem normal but can bring a huge change in the World.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events" id="events">
+            <div class="margin-space">
+                <div class="events min-h-screen mx-auto w-full flex justify-center items-center">
+                    <div class="initiatives-div mt-10 flex flex-col items-center">
+                        <h1 class="heading text-3xl uppercase text-black" data-aos="zoom-in" data-aos-duration="2000">
+                            Upcoming Events
+                        </h1>
+                        <br><br><br>
+                        <div class="events-div flex flex-wrap justify-center">
+                            <div data-aos="zoom-in" data-aos-duration="2000">
+                                <p class="text-center">
+                                    No Upcoming Events
+                                </p>
+                            </div>
+                            <!-- <div class="m-3" data-aos="flip-left" data-aos-duration="2000">
+                                <img src="./assets/events/tech-bazaar.jpg" alt="Tech Bazaar"
+                                    class="rounded-lg events-img">
+                                <p class="py-4 text-center text-black">Tech Bazaar</p>
+                            </div>
+
+                            <div class="scale-card">
+                                <div class="m-3 scale-front" data-aos="flip-left" data-aos-duration="2000">
+                                    <img src="./assets/events/scale-up.jpg" alt="Scale Up"
+                                        class="rounded-lg events-img">
+                                </div>
+                                <div class="scale-back p-5 rounded-lg flex justify-center items-center mt-4">
+                                    <p class="text-center text-white">
+                                        ScaleUp is a Shark-tank-based event where you are given a choice to don the role
+                                        of
+                                        an entrepreneur or an investor to negotiate the best deal possible. The
+                                        participants
+                                        use their wits and negotiating skills as the investors maximise their stakes on
+                                        profitable start-ups, and the entrepreneurs try to increase the valuation of
+                                        their
+                                        company.
+                                    </p>
+                                </div>
+                            </div> -->
+                            <!-- <div class="m-3" data-aos="flip-left" data-aos-duration="2000">
+                                <img src="https://via.placeholder.com/250X250" alt="Event 3" class="rounded-lg events-img">
+                                <p class="py-4 text-center text-black">Event 3</p>
+                            </div>
+                            <div class="m-3" data-aos="flip-left" data-aos-duration="2000">
+                                <img src="https://via.placeholder.com/250X250" alt="Event 4" class="rounded-lg events-img">
+                                <p class="py-4 text-center text-black">Event 4</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team bg-black" id="team">
+            <div class="margin-space">
+                <div class="mx-auto w-full min-h-screen flex flex-col justify-center items-center">
+                    <div class="exec-members-div swiper-slide flex flex-col items-center mt-16 mb-10">
+                        <h1 class="heading text-3xl uppercase text-white" data-aos="zoom-in" data-aos-duration="2000">
+                            Executive Members</h1>
+                        <br><br><br>
+                        <div class="flex justify-center mx-auto w-full">
+                            <div class="team-desktop exec-members-container swiper swiper-exec flex">
+                                <div class="swiper-wrapper">
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/anshul.jpeg" alt="Anshul Yadav"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Anshul Yadav</h1>
+                                            <h2 class="text-center text-white">CEO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/pooja.jpg" alt="Pooja Kumari"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Pooja Kumari</h1>
+                                            <h2 class="text-center text-white">COO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/shivam.jpg" alt="Shivam Agrawal"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Shivam Agrawal</h1>
+                                            <h2 class="text-center text-white">COO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/chintan.jpg" alt="Chintan Puggalok"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Chintan Puggalok</h1>
+                                            <h2 class="text-center text-white">CMO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/ayush.jpg" alt="Ayush Madan"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Ayush Madan</h1>
+                                            <h2 class="text-center text-white">Social Executive</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/rahul.jpg" alt="Rahul Jaiswal"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Rahul Jaiswal</h1>
+                                            <h2 class="text-center text-white">Content Executive</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="team-mob exec-members-container swiper swiper-exec-mob flex">
+                                <div class="swiper-wrapper">
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/anshul.jpeg" alt="Anshul Yadav"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Anshul Yadav</h1>
+                                            <h2 class="text-center text-white">CEO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/pooja.jpg" alt="Pooja Kumari"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Pooja Kumari</h1>
+                                            <h2 class="text-center text-white">COO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/shivam.jpg" alt="Shivam Agrawal"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Shivam Agrawal</h1>
+                                            <h2 class="text-center text-white">COO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/chintan.jpg" alt="Chintan Puggalok"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Chintan Puggalok</h1>
+                                            <h2 class="text-center text-white">CMO</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/ayush.jpg" alt="Ayush Madan"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Ayush Madan</h1>
+                                            <h2 class="text-center text-white">Social Executive</h2>
+                                        </div>
+                                    </div>
+                                    <div class="exec-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/rahul.jpg" alt="Rahul Jaiswal"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Rahul Jaiswal</h1>
+                                            <h2 class="text-center text-white">Content Executive</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="board-members-div swiper-slide flex flex-col items-center mt-16 mb-10">
+                        <h1 class="heading text-3xl uppercase text-white" data-aos="zoom-in" data-aos-duration="2000">
+                            Board Members</h1>
+                        <br><br><br>
+                        <div class="flex justify-center mx-auto w-full">
+                            <div class="team-desktop board-members-container swiper swiper-member flex">
+                                <div class="swiper-wrapper">
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/abhinav.jpeg" alt="Abhinav Gudipati"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Abhinav Gudipati</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/aditya.jpg" alt="Aditya"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Aditya</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/akshita.jpeg" alt="Akshita Gupta"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Akshita Gupta</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/anurag.jpg" alt="Anurag Gulati"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Anurag Gulati</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/pragyan.jpg" alt="Pragyan Yadav"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Pragyan Yadav</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/rakshit.jpeg" alt="Rakshit"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Rakshit</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/ritwick.png" alt="Ritwick Pal"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Ritwick Pal</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/rohit.jpg" alt="Rohit Kumar"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Rohit Kumar</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/utkrisht.jpg" alt="Utkrisht Sikka"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Utkrisht Sikka</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/vishnu.jpeg" alt="Vishnu Vardhan"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Vishnu Vardhan</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/yash.jpg" alt="Yash"
+                                                class="rounded-lg w-48 h-48">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Yash</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <div class="team-mob board-members-container swiper swiper-member-mob flex">
+                                <div class="swiper-wrapper">
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/abhinav.jpeg" alt="Abhinav Gudipati"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Abhinav Gudipati</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/aditya.jpg" alt="Aditya"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Aditya</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/akshita.jpeg" alt="Akshita Gupta"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Akshita Gupta</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/anurag.jpg" alt="Anurag Gulati"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Anurag Gulati</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/pragyan.jpg" alt="Pragyan Yadav"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Pragyan Yadav</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/rakshit.jpeg" alt="Rakshit"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Rakshit</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/ritwick.png" alt="Ritwick Pal"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Ritwick Pal</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/rohit.jpg" alt="Rohit Kumar"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Rohit Kumar</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/utkrisht.jpg" alt="Utkrisht Sikka"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Utkrisht Sikka</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/vishnu.jpeg" alt="Vishnu Vardhan"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Vishnu Vardhan</h1>
+                                        </div>
+                                    </div>
+                                    <div class="board-members-div swiper-slide my-3 flex flex-col space-y-4"
+                                        data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="flex justify-center">
+                                            <img src="./assets/members/yash.jpg" alt="Yash"
+                                                class="rounded-lg w-72 h-72">
+                                        </div>
+                                        <div class="flex flex-col justify-center items-center text-center">
+                                            <h1 class="heading text-center text-white">Yash</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="get-in-touch bg-white" id="getintouch">
+            <div class="margin-space">
+                <div class="min-h-screen flex justify-center items-center">
+                    <div class="form-container w-full p-5">
+                        <form name="submit-to-google-sheet" id="form">
+                            <h2 class="heading uppercase text-3xl text-center text-black" data-aos="zoom-in"
+                                data-aos-duration="2000">Get in Touch</h2>
+                            <br><br>
+                            <div class="row100 relative w-full grid" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="col relative w-full">
+                                    <div class="inputbox relative w-full h-10">
+                                        <input
+                                            class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
+                                            type="text" required="required" name="name">
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg">Name</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="col relative w-full ">
+                                    <div class="inputbox relative w-full h-10">
+                                        <input
+                                            class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
+                                            type="text" required="required" name="contact_no">
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg">Contact
+                                            No.</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row100 relative w-full grid" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="col relative w-full ">
+                                    <div class="inputbox relative w-ful h-10">
+                                        <input
+                                            class="absolute w-full border-0 text-lg shadow-none outline-none bg-black rounded-lg h-10"
+                                            type="Email" required="required" name="email">
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-9 pointer-events-none text-lg">Email</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row100 relative w-full grid" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="col relative w-full ">
+                                    <div class="inputbox textarea relative w-full h-40">
+                                        <textarea
+                                            class="absolute w-full h-full border-0 text-lg h-full resize-none shadow-none outline-none bg-black rounded-lg"
+                                            required="required" name="message"></textarea>
+                                        <span
+                                            class="form-span text absolute top-0 left-0 leading-10 pointer-events-none text-lg">Your
+                                            Message Here...</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row100 relative w-full grid" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="col relative w-full">
+                                    <button
+                                        class="cursor-pointer outline-none text-lg rounded-lg bg-black transform transition duration-700 delay-50 hover:bg-white hover:text-black hover:border-black border"
+                                        type="submit" value="Send">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-black text-white">
+        <div class="margin-space">
+            <!-- <div class="" style="margin: auto; max-width: 1400px;"> -->
+            <div class="flex flex-col justify-center w-full">
+                <div class="flex flex-col md:flex-row justify-between my-10 mx-2">
+                    <div class="flex flex-col w-full md:w-2/5">
+                        <div class="logo">
+                            <a href="#home">
+                                <img src="./assets/logo.png" alt="E-Cell IIITD" class="h-12 w-12">
+                            </a>
+                        </div>
+                        <br>
+                        <div class="menu">
+                            <div class="nav-list-footer flex md:flex-row w-full">
+                                <a href="#about" class="pr-5"><span class="">About</span></a>
+                                <a href="#initiatives" class="pr-5"><span class="">Initiatives</span></a>
+                                <a href="#events" class="pr-5"><span class="">Events</span></a>
+                                <a href="#team" class="pr-5"><span class="">Team</span></a>
+                                <a href="#getintouch" class="pr-5"><span class="">Get In Touch</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address flex flex-col w-full md:w-1/3 mt-5">
+                        <div class="flex flex-row">
+                            <div class="address-icons flex flex-col space-y-8 mr-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="address-text flex flex-col space-y-5 ml-2">
+                                <p class="location">E-Cell Room, Student Center, IIIT Delhi</p>
+                                <a href="mailto:ecell@iiitd.ac.in">
+                                    <p class="mail text-blue-500">ecell@iiitd.ac.in</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-static flex text-3xl justify-around">
+                    <a href="https://www.instagram.com/ecell_iiitd/" target="_blank"><i
+                            class="fab fa-instagram m-5 hover:text-indigo-600 rounded-lg transform transition duration-700 delay-50"></i></a>
+                    <a href="https://www.linkedin.com/company/iiitdecell" target="_blank"><i
+                            class="fab fa-linkedin m-5 hover:text-blue-600 rounded-lg transform transition duration-700 delay-50"></i></a>
+                    <a href="https://twitter.com/ecell_iiitd" target="_blank"><i
+                            class="fab fa-twitter m-5 hover:text-blue-400 rounded-lg transform transition duration-700 delay-50"></i></a>
+                    <a href="https://www.youtube.com/channel/UCT1NEtd64KZlr9tkJf7x-HQ" target="_blank"><i
+                            class="fab fa-youtube m-5 hover:text-red-500 rounded-lg transform transition duration-700 delay-50"></i></a>
+                </div>
+                <div class="copyright w-full flex justify-center mb-5">
+                    <p class="heading">Copyright 2021 E-Cell IIITD. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./anime.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
