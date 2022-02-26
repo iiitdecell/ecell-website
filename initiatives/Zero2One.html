@@ -6,22 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styles.css">
     <title>Zero2One</title>
 </head>
 
 <body>
-    <div class="unnamed w-auto h-40">
+     <div class="unnamed w-auto h-40">
 
     </div>
-    <div class="grid grid-cols-2 gap-4 h-80 ">
-        <div class="mx-auto my-auto"><img class="w-80" src="../assets/initiatives/Zero2One.png" alt="Zero2One picure"></div>
-        <div class="mr-32">
-            <h1 class="font-bold text-5xl my-14 text-center">Open house</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus eaque quod expedita, tempora
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 h-auto lg:h-80 ">
+        <div class="mx-auto my-auto"><img class="w-80" src="" alt="Zero2one Pic"></div>
+        <div class="mx-24 lg:mr-32">
+            <h1 class="font-bold text-5xl my-14 text-center">Zero2One</h1>
+            <p class="text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus
+                eaque quod expedita, tempora
                 sunt, molestias voluptatum praesentium minus ipsum placeat commodi incidunt! Animi quis deserunt, ex
                 ducimus aperiam nobis.</p>
         </div>
     </div>
+    <div class="Very-important pt-16 lg:px-24  ">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1563372057-bcd0e4593fbe" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1604423533466-072019eec48f" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1568623970736-27bea63b4489" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1567693528052-e213227086bb" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1606096571209-c0932e47a4d8" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1636127171118-f33d34e5e77b" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1559819203-c846c3ef46ca" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl" src="https://images.unsplash.com/photo-1597574968170-4dfbc5afca8a" alt=""></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },breakpoints: {
+          
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          }}
+        });
+      </script>
 </body>
 
 </html>
