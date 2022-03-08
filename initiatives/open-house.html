@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Open House</title>
+</head>
+
+<body class="mx-8 md:mx-8 lg:mx-48">
+        <header class="header z-10 ">
+            <nav class="nav">
+                <div class="w-full flex justify-between">
+                    <div class="logo-div mt-5 md:mt-10 ml-5">
+                        <a href="#home">
+                            <img src="../assets/logo.png" alt="E-Cell IIITD" class="h-12 w-12 rounded-full">
+                        </a>
+                    </div>
+                    <button class="outline-none flex justify-center items-center">
+                        <div class="menu-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-black rounded-full p-3">
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path fill="none"
+                                    d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+                                    c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+                                    s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+                                    c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="nav-list hidden fixed md:space-x-4 z-10 flex md:flex-row">
+                        <a href="#about" class="text-white hover:text-black"><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">About</span></a>
+                        <a href="#initiatives" class="text-white hover:text-black"><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Initiatives</span></a>
+                        <a href="#events" class="text-white hover:text-black"><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Events</span></a>
+                        <a href="#team" class="text-white hover:text-black"><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Team</span></a>
+                        <a href="#getintouch" class="text-white hover:text-black"><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black">Get
+                                In Touch</span></a>
+                    </div>
+                    <button class="outline-none flex justify-center items-center">
+                        <div
+                            class="hidden close-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-black rounded-full p-3">
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path fill="none" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08
+                                c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469
+                                c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304
+                                c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </header>
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-4 ">
+        <div class="mx-auto my-auto px-7"><img class="w-80 lg:w-3/4 object-contain"
+                src="../assets/initiatives/open-house.jpg" alt=""></div>
+        <div class="mr-32">
+            <h1 class="font-bold text-5xl my-14 text-left">Open House</h1>
+            <p>A novel concept introduced by E-Cell for all the aspiring entrepreneurs to get their queries ranging from
+                property rights, funding etc., resolved by a panel composed of experienced entrepreneurs and experts of
+                this domain.</p>
+
+        </div>
+    </div>
+    <div class="Very-important pt-16 px-3  ">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1563372057-bcd0e4593fbe" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1604423533466-072019eec48f" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1568623970736-27bea63b4489" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1567693528052-e213227086bb" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1606096571209-c0932e47a4d8" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1636127171118-f33d34e5e77b" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1559819203-c846c3ef46ca" alt=""></div>
+                <div class="swiper-slide "><img class="w-full lg:w-96 rounded-3xl"
+                        src="https://images.unsplash.com/photo-1597574968170-4dfbc5afca8a" alt=""></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+   
+    <script>
+        var swiperCustom = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }, breakpoints: {
+
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../anime.min.js"></script>
+    <script src="../index.js"></script>
+</body>
+
+</html>
