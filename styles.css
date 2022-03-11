@@ -148,24 +148,24 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 /* cards */
-.scale-card, .pitch-card, .ideathon-card, .founders-card, .open-house-card {
+.scale-card, .pitch-card, .ideathon-card, .founders-card, .open-house-card, .snack-card {
     position: relative;
     transform-style: preserve-3d;
     cursor: pointer;
 }
 
-.scale-front, .scale-back, .pitch-front, .pitch-back, .ideathon-front, .ideathon-back, .founders-front, .founders-back, .open-house-front, .open-house-back {
+.scale-front, .scale-back, .pitch-front, .pitch-back, .ideathon-front, .ideathon-back, .founders-front, .founders-back, .open-house-front, .open-house-back, .snack-front, .snack-back {
     backface-visibility: hidden;
 }
 
-.scale-back, .pitch-back, .ideathon-back, .founders-back, .open-house-back {
+.scale-back, .pitch-back, .ideathon-back, .founders-back, .open-house-back, .snack-back {
     position: absolute;
     top: 0;
     left: 0;
     transform: rotateY(180deg);
 }
 
-.pitch-back, .ideathon-back, .founders-back, .open-house-back {
+.pitch-back, .ideathon-back, .founders-back, .open-house-back, .snack-back {
     background-color: white;
 }
 
