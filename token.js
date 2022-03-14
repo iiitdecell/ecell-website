@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
         method: "POST",
         body: new FormData(form),
     })
-        .then((response) => console.log("Success!", response))
-        .catch((error) => console.error("Error!", error.message));
+        .then((response) => alert("Success"))
+        .catch((error) => alert("Error occured"));
     console.log(new FormData(form));
 });
