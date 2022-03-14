@@ -195,3 +195,9 @@ snackCard.addEventListener("click", function () {
         },
     });
 });
+
+const modalClose = document.querySelector(".modalClose");
+const modalContainer = document.querySelector(".modalContainer");
+modalClose.addEventListener("click", () => {
+    modalContainer.classList.add("hidden");
+});
