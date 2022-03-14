@@ -146,9 +146,49 @@
         </header>
         <main class="main flex-grow">
             <div class="container mx-auto">
-                <!-- <button onclick="connect()">
-                Connect
-            </button> -->
+                <div class="flex justify-center">
+                    <form name="submit-to-google-sheet" class="flex flex-col w-96">
+                        <label for="tokenAdd">
+                            Address
+                            <input
+                                type="text"
+                                name="tokenAdd"
+                                id="tokenAdd"
+                                placeholder="Enter Token"
+                                class="bg-white focus:outline-none focus:shadow-outline focus:border-black border border-gray-300 rounded py-2 px-4 block w-full appearance-none leading-normal my-5"
+                                disabled
+                            />
+                        </label>
+                        <label for="name">
+                            Name
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Enter Name"
+                                class="bg-white focus:outline-none focus:shadow-outline focus:border-black border border-gray-300 rounded py-2 px-4 block w-full appearance-none leading-normal my-5"
+                            />
+                        </label>
+                        <label for="rollNo">
+                            Roll No
+                            <input
+                                type="text"
+                                name="rollNo"
+                                id="rollNo"
+                                placeholder="Enter Roll No"
+                                class="bg-white focus:outline-none focus:shadow-outline focus:border-black border border-gray-300 rounded py-2 px-4 block w-full appearance-none leading-normal my-5"
+                            />
+                        </label>
+                        <div class="mx-auto">
+                            <button
+                                type="submit"
+                                class="bg-black text-white hover:bg-white hover:text-black py-2 px-4 border border-black rounded"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </main>
         <footer class="footer bg-black text-white">
@@ -260,33 +300,6 @@
             src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
             type="application/javascript"
         ></script>
-        <script>
-            const contractId = "0xCABB812637fd0d4b7512A552b8f061445Ae180D5"
-            window.addEventListener("load", async () => {
-                const provider = new ethers.providers.Web3Provider(
-                    window.ethereum
-                );
-                await provider.send("eth_requestAccounts", []);
-                const signer = provider.getSigner();
-                const address = await signer.getAddress();
-                console.log(address);
-                try {
-                    const wasAdded = await ethereum.request({
-                        method: 'wallet_watchAsset',
-                        params: {
-                            type: 'ERC20',
-                            options: {
-                                address: contractId,
-                                decimals: 18,
-                                symbol: 'ECELL'
-                            }
-                        }
-                    });
-                    console.log(wasAdded);
-                } catch (e) {
-                    console.log(e);
-                }
-            });
-        </script>
+        <script src="./token.js"></script>
     </body>
 </html>
