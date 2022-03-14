@@ -1,6 +1,26 @@
 const contractId = "0xCABB812637fd0d4b7512A552b8f061445Ae180D5";
+const url = "https://speedy-nodes-nyc.moralis.io/b3d77907ce387fb9904b0422/polygon/mainnet/";
 
 window.addEventListener("load", async () => {
+    // const customHttpProvider = new ethers.providers.JsonRpcProvider(url);
+    // customHttpProvider.getBlockNumber().then((result) => {
+    //     console.log(result);
+    // })
+    // const web3 = await Moralis.enableWeb3({ provider: "Network" });
+    await window.ethereum.request({
+        method: "wallet_addEthereumChain",
+        params: [{
+            chainId: "0x13881",
+            chainName: "Matic Mumbai Testnet",
+            // nativeCurrency: {
+            //     name: "ECELL Token",
+            //     symbol: "ECELL",
+            //     decimals: 18
+            // },
+            rpcUrls: ["https://rpc-mumbai.maticvigil.com/"],
+            blockExplorerUrls: ["https://mumbai.polygonscan.com/"]
+        }]
+    })
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     await provider.send("eth_requestAccounts", []);
     const signer = provider.getSigner();
