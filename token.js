@@ -1,4 +1,4 @@
-const contractId = "0xdBEfE4f1FFFDFFDAc9c9BcbBf299cc42Ad110970";
+const contractId = "0xC236C4537692Ab8b9E4EfED2C5e8b0E1192D3131";
 const url = "https://speedy-nodes-nyc.moralis.io/b3d77907ce387fb9904b0422/polygon/mainnet/";
 
 window.addEventListener("load", async () => {
