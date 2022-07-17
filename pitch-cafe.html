@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Primary Meta Tags -->
+        <title>E-Cell IIITD</title>
+        <meta name="title" content="E-Cell IIITD" />
+        <meta
+            name="description"
+            content="Entrepreneurship Cell of Indraprastha Institute of Information Technology Delhi"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ecell-iiitd.netlify.app/" />
+        <meta property="og:title" content="E-Cell IIITD" />
+        <meta
+            property="og:description"
+            content="Entrepreneurship Cell of Indraprastha Institute of Information Technology Delhi"
+        />
+        <meta property="og:image" content="./assets/logo.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://ecell-iiitd.netlify.app/"
+        />
+        <meta property="twitter:title" content="E-Cell IIITD" />
+        <meta
+            property="twitter:description"
+            content="Entrepreneurship Cell of Indraprastha Institute of Information Technology Delhi"
+        />
+        <meta property="twitter:image" content="./assets/logo.png" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Welcome to E-Cell IIITD</title>
+    </head>
+
+    <body class="flex flex-col min-h-screen">
+        <header class="header z-10">
+            <nav class="nav">
+                <div class="w-full flex justify-between">
+                    <div class="logo-div mt-5 md:mt-10 ml-5 md:ml-20">
+                        <a href="#home">
+                            <img
+                                src="./assets/logo.png"
+                                alt="E-Cell IIITD"
+                                class="h-12 w-12 rounded-full"
+                            />
+                        </a>
+                    </div>
+                    <button
+                        class="outline-none flex justify-center items-center"
+                    >
+                        <div
+                            class="menu-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-black rounded-full p-3"
+                        >
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    fill="none"
+                                    d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+								s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+								c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div
+                        class="nav-list hidden fixed md:space-x-4 z-10 flex md:flex-row"
+                    >
+                        <a href="#about" class="text-white hover:text-black"
+                            ><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                >About</span
+                            ></a
+                        >
+                        <a
+                            href="#initiatives"
+                            class="text-white hover:text-black"
+                            ><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                >Initiatives</span
+                            ></a
+                        >
+                        <a href="#events" class="text-white hover:text-black"
+                            ><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                >Events</span
+                            ></a
+                        >
+                        <a href="#team" class="text-white hover:text-black"
+                            ><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                >Team</span
+                            ></a
+                        >
+                        <a
+                            href="#getintouch"
+                            class="text-white hover:text-black"
+                            ><span
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                >Get In Touch</span
+                            ></a
+                        >
+                    </div>
+                    <button
+                        class="outline-none flex justify-center items-center"
+                    >
+                        <div
+                            class="hidden close-icon fixed right-5 md:right-20 top-5 md:top-10 z-10 bg-black rounded-full p-3"
+                        >
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path
+                                    fill="none"
+                                    d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08
+							c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469
+							c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304
+							c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main class="main flex-grow">
+            <div class="container mx-auto my-10">
+                <div class="flex flex-row justify-between">
+                    <div>
+                        <!-- image -->
+                        <img
+                            src="https://picsum.photos/500"
+                            alt="Pitch Cafe Banner"
+                            class="rounded-lg"
+                        />
+                    </div>
+                    <div class="w-1/2 space-y-10">
+                        <!-- text -->
+                        <h1 class="text-5xl heading">Pitch Cafe</h1>
+                        <p class="w-1/2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. In, quae ab. Officiis maiores molestiae, qui
+                            autem est quo voluptatum, facilis, fugit earum ab
+                            quasi. Provident nulla voluptatum labore laboriosam
+                            iusto?
+                        </p>
+                        <p><b>Date: </b> 20 July 2022</p>
+                        <p><b>Venue: </b> IIIT Delhi</p>
+                        <div>
+                            <a href="#register" target="_blank">
+                                <button
+                                    class="px-7 py-2 rounded-lg bg-blue-600 text-white font-bold hover:bg-green-600"
+                                >
+                                    Register Now
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-10 space-y-5">
+                    <!-- gallery -->
+                    <h1 class="text-4xl heading">
+                        Gallery
+                    </h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper flex">
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-[300px]">
+                                <div class="flex">
+                                    <img
+                                        src="https://picsum.photos/300"
+                                        alt="Slide 1"
+                                        class="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-10 space-y-5">
+                    <!-- timeline -->
+                    <h1 class="text-4xl heading">
+                        Timeline
+                    </h1>
+                </div>
+                <div class="my-10 space-y-5" id="register">
+                    <!-- form -->
+                    <h1 class="text-4xl heading">
+                        Registration Form
+                    </h1>
+                    <div>
+                        <form action="">
+                            <div class="my-5">
+                                <label for="name" class="font-bold">Name: </label>
+                                <input type="text" name="name" placeholder="Full Name" required class="border px-2 py-2 rounded-lg">
+                            </div>
+                            <div class="my-5">
+                                <label for="email" class="font-bold">Email: </label>
+                                <input type="email" name="email" id="" placeholder="Your Email" required class="border px-2 py-2 rounded-lg">
+                            </div>
+                            <div>
+                                <button type="submit" class="text-white font-bold bg-blue-600 hover:bg-green-600 rounded-lg">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer bg-black text-white">
+            <div class="margin-space">
+                <!-- <div class="" style="margin: auto; max-width: 1400px;"> -->
+                <div class="flex flex-col justify-center w-full">
+                    <div
+                        class="flex flex-col md:flex-row justify-between my-10 mx-2"
+                    >
+                        <div class="flex flex-col w-full md:w-2/5">
+                            <div class="logo">
+                                <a href="#home">
+                                    <img
+                                        src="./assets/logo.png"
+                                        alt="E-Cell IIITD"
+                                        class="h-12 w-12"
+                                    />
+                                </a>
+                            </div>
+                            <br />
+                            <div class="menu">
+                                <div
+                                    class="nav-list-footer flex md:flex-row w-full"
+                                >
+                                    <a href="#about" class="pr-5"
+                                        ><span class="">About</span></a
+                                    >
+                                    <a href="#initiatives" class="pr-5"
+                                        ><span class="">Initiatives</span></a
+                                    >
+                                    <a href="#events" class="pr-5"
+                                        ><span class="">Events</span></a
+                                    >
+                                    <a href="#team" class="pr-5"
+                                        ><span class="">Team</span></a
+                                    >
+                                    <a href="#getintouch" class="pr-5"
+                                        ><span class="">Get In Touch</span></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address flex flex-col w-full md:w-1/3 mt-5">
+                            <div class="flex flex-row">
+                                <div
+                                    class="address-icons flex flex-col space-y-8 mr-2"
+                                >
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div
+                                    class="address-text flex flex-col space-y-5 ml-2"
+                                >
+                                    <p class="location">
+                                        E-Cell Room, Student Center, IIIT Delhi
+                                    </p>
+                                    <a href="mailto:ecell@iiitd.ac.in">
+                                        <p class="mail text-blue-500">
+                                            ecell@iiitd.ac.in
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-static flex text-3xl justify-around">
+                        <a
+                            href="https://www.instagram.com/ecell_iiitd/"
+                            target="_blank"
+                            ><i
+                                class="fab fa-instagram m-5 hover:text-indigo-600 rounded-lg transform transition duration-700 delay-50"
+                            ></i
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/company/iiitdecell"
+                            target="_blank"
+                            ><i
+                                class="fab fa-linkedin m-5 hover:text-blue-600 rounded-lg transform transition duration-700 delay-50"
+                            ></i
+                        ></a>
+                        <a
+                            href="https://twitter.com/ecell_iiitd"
+                            target="_blank"
+                            ><i
+                                class="fab fa-twitter m-5 hover:text-blue-400 rounded-lg transform transition duration-700 delay-50"
+                            ></i
+                        ></a>
+                        <a
+                            href="https://www.youtube.com/channel/UCT1NEtd64KZlr9tkJf7x-HQ"
+                            target="_blank"
+                            ><i
+                                class="fab fa-youtube m-5 hover:text-red-500 rounded-lg transform transition duration-700 delay-50"
+                            ></i
+                        ></a>
+                    </div>
+                    <div class="copyright w-full flex justify-center mb-5">
+                        <p class="heading">
+                            Copyright 2021 E-Cell IIITD. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <!-- <script src="./anime.min.js"></script> -->
+        <!-- <script src="./index.js"></script> -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                direction: 'horizontal',
+                slidesPerView: 4,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
+
+            var form = document.getElementById("form");
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                fetch(form.action, {
+                    method: "POST",
+                    body: new FormData(document.getElementById("form")),
+                })
+                    .then((response) => response.json())
+                    .then((html) => {
+                        // you can put any JS code here
+                        alert("success");
+                        document.getElementById("form").reset();
+                    });
+            });
+        </script>
+    </body>
+</html>
