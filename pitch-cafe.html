@@ -54,6 +54,11 @@
         />
         <link rel="stylesheet" href="./styles.css" />
         <title>Welcome to E-Cell IIITD</title>
+        <style>
+            body {
+                background: linear-gradient(180deg, #65989b 0%, #feaf77 100%);
+            }
+        </style>
     </head>
 
     <body class="flex flex-col min-h-screen">
@@ -91,7 +96,7 @@
                     >
                         <a href="#about" class="text-white hover:text-black"
                             ><span
-                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-white"
                                 >About</span
                             ></a
                         >
@@ -99,19 +104,19 @@
                             href="#initiatives"
                             class="text-white hover:text-black"
                             ><span
-                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-white"
                                 >Initiatives</span
                             ></a
                         >
                         <a href="#events" class="text-white hover:text-black"
                             ><span
-                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-white"
                                 >Events</span
                             ></a
                         >
                         <a href="#team" class="text-white hover:text-black"
                             ><span
-                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-white"
                                 >Team</span
                             ></a
                         >
@@ -119,7 +124,7 @@
                             href="#getintouch"
                             class="text-white hover:text-black"
                             ><span
-                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-black"
+                                class="bg-black hover:bg-white p-2 rounded-lg transform transition duration-700 delay-50 border hover:border-white"
                                 >Get In Touch</span
                             ></a
                         >
@@ -144,30 +149,38 @@
                 </div>
             </nav>
         </header>
-        <main class="main flex-grow">
-            <div class="container mx-auto my-10">
+        <main class="main flex-grow text-white">
+            <div class="container mx-auto my-32">
                 <div class="flex flex-row justify-between">
                     <div>
                         <!-- image -->
                         <img
-                            src="https://picsum.photos/500"
+                            src="./assets/events/pitch-cafe-main.png"
                             alt="Pitch Cafe Banner"
-                            class="rounded-lg"
+                            class="rounded-lg w-[550px] h-[550px]"
                         />
                     </div>
                     <div class="w-1/2 space-y-10">
                         <!-- text -->
-                        <h1 class="text-5xl heading">Pitch Cafe</h1>
-                        <p class="w-1/2">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. In, quae ab. Officiis maiores molestiae, qui
-                            autem est quo voluptatum, facilis, fugit earum ab
-                            quasi. Provident nulla voluptatum labore laboriosam
-                            iusto?
+                        <h1 class="text-5xl heading">Welcome to PitchCafé</h1>
+                        <p class="w-3/4 text-2xl">
+                            Pitch Cafe nurtures the spirit of entrepreneurship
+                            amongst young innovators with budding ideas on
+                            startups. The goal of Pitch Cafe is to narrow down
+                            the gap between dreams and its implementation in
+                            real time. The event provides an excellent platform
+                            for early-stage startups and potential ideas to be
+                            recognized by the investors and consequently the
+                            industry. Further, it promotes innovative thinking
+                            and strengthens teamwork, leadership skills and
+                            interpersonal relationships amongst the young bright
+                            minds. Needless to say, Pitch Cafe is instrumental
+                            in enriching the entrepreneurship culture amongst
+                            the youth in the society.
                         </p>
-                        <p><b>Date: </b> 20 July 2022</p>
-                        <p><b>Venue: </b> IIIT Delhi</p>
-                        <div>
+                        <!-- <p><b>Date: </b> 20 July 2022</p>
+                        <p><b>Venue: </b> IIIT Delhi</p> -->
+                        <!-- <div>
                             <a href="#register" target="_blank">
                                 <button
                                     class="px-7 py-2 rounded-lg bg-blue-600 text-white font-bold hover:bg-green-600"
@@ -175,15 +188,15 @@
                                     Register Now
                                 </button>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="my-10 space-y-5">
                     <!-- gallery -->
                     <h1 class="text-4xl heading">
-                        Gallery
+                        PitchCafé 2.0: Year in retrospect
                     </h1>
-                    <div class="swiper mySwiper">
+                    <div class="swiper mySwiper3">
                         <div class="swiper-wrapper flex">
                             <div class="swiper-slide w-[300px]">
                                 <div class="flex">
@@ -262,29 +275,143 @@
                 </div>
                 <div class="my-10 space-y-5">
                     <!-- timeline -->
-                    <h1 class="text-4xl heading">
-                        Timeline
-                    </h1>
+                    <h1 class="text-4xl heading">Timeline</h1>
+                    <div class="mx-auto flex justify-center">
+                        <table class="border-collapse text-black">
+                            <thead>
+                                <tr>
+                                    <th class="border border-white p-3"></th>
+                                    <th class="border border-white p-3">
+                                        Description
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">9.30am - 11.00am</td>
+                                    <td class="border border-white p-3">
+                                        <b>Registration</b>
+                                        <br />
+                                        Check-in for participants and spectators
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">11.00am - 11.45am</td>
+                                    <td class="border border-white p-3">
+                                        <b>Guest Speakers</b>
+                                        <br />
+                                        Introduction to speakers and honoree.
+                                        Learn about the latest developments in
+                                        your field from the most
+                                        forward-thinking people in the business
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">12.00pm - 2.00pm</td>
+                                    <td class="border border-white p-3">
+                                        <b>Pitches</b>
+                                        <br />
+                                        Five pitches apiece by college and
+                                        school pupils in two distinct rooms.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">2.00pm - 3.00pm</td>
+                                    <td class="border border-white p-3">
+                                        <b>Break</b>
+                                        <br />
+                                        Make your way to the refreshments and
+                                        entertainment area.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">3.00pm - 4.30pm</td>
+                                    <td class="border border-white p-3">
+                                        <b>Continue Pitching</b>
+                                        <br />
+                                        Time to get back to the rooms for the
+                                        pitches
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">4.30pm - 5.15pm</td>
+                                    <td class="border border-white p-3">
+                                        <b>Panel</b>
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">5.15pm - 6.00pm</td>
+                                    <td class="border border-white p-3">
+                                        <b
+                                            >Prize Distribution/Closing
+                                            Ceremony</b
+                                        >
+                                        <br />
+                                        Announcing the winners and bringing the
+                                        competition to an end
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold border border-white p-3">6.00pm - 7.00pm</td>
+                                    <td class="border border-white p-3">
+                                        <b>Informal Discussion</b>
+                                        <br />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="my-10 space-y-5" id="register">
                     <!-- form -->
-                    <h1 class="text-4xl heading">
-                        Registration Form
-                    </h1>
-                    <div>
+                    <h1 class="text-4xl heading">Registration Form</h1>
+                    <!-- <div>
                         <form action="">
                             <div class="my-5">
-                                <label for="name" class="font-bold">Name: </label>
-                                <input type="text" name="name" placeholder="Full Name" required class="border px-2 py-2 rounded-lg">
+                                <label for="name" class="font-bold"
+                                    >Name:
+                                </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Full Name"
+                                    required
+                                    class="border px-2 py-2 rounded-lg"
+                                />
                             </div>
                             <div class="my-5">
-                                <label for="email" class="font-bold">Email: </label>
-                                <input type="email" name="email" id="" placeholder="Your Email" required class="border px-2 py-2 rounded-lg">
+                                <label for="email" class="font-bold"
+                                    >Email:
+                                </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id=""
+                                    placeholder="Your Email"
+                                    required
+                                    class="border px-2 py-2 rounded-lg"
+                                />
                             </div>
                             <div>
-                                <button type="submit" class="text-white font-bold bg-blue-600 hover:bg-green-600 rounded-lg">Submit</button>
+                                <button
+                                    type="submit"
+                                    class="text-white font-bold bg-blue-600 hover:bg-green-600 rounded-lg"
+                                >
+                                    Submit
+                                </button>
                             </div>
                         </form>
+                    </div> -->
+                    <div class="flex flex-col mx-auto">
+                        <div class="mx-auto flex justify-center">
+                            <img src="https://picsum.photos/300" alt="register image" class="rounded-lg">
+                        </div>
+                        <div class="flex justify-center items-center my-10">
+                            <a href="">
+                                <button class="rounded-full text-white font-bold bg-green-500 py-2 px-7">Register Now</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -393,10 +520,10 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <!-- <script src="./anime.min.js"></script> -->
-        <!-- <script src="./index.js"></script> -->
+        <script src="./index.js"></script>
         <script>
-            var swiper = new Swiper(".mySwiper", {
-                direction: 'horizontal',
+            var swiper3 = new Swiper(".mySwiper3", {
+                direction: "horizontal",
                 slidesPerView: 4,
                 spaceBetween: 30,
                 centeredSlides: true,
