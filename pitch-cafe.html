@@ -53,8 +53,7 @@
         background: linear-gradient(
           180deg,
           #feaf77 0%,
-          #fed988 50%,
-          #feaf77 100%
+          #fed988 20%
         );
       }
     </style>
@@ -66,11 +65,19 @@
         <div class="w-full flex justify-between">
           <div class="logo-div mt-5 md:mt-10 ml-5 md:ml-20">
             <a href="#home">
-              <img
-                src="./assets/logo.png"
-                alt="E-Cell IIITD"
-                class="h-12 w-12 rounded-full"
-              />
+
+              <h1
+              class="text-5xl heading"
+              style="
+                font-style: normal;
+                font-weight: 700;
+                font-size: 64px;
+                color: #ffffff; 
+                font-family: 'ITC Avant Garde Gothic LT', sans-serif;
+              "
+            >
+              PitchCafé
+            </h1>
             </a>
           </div>
           <!-- <button class="outline-none flex justify-center items-center">
@@ -147,10 +154,10 @@
           <div>
             <!-- image -->
             <img
-              src="./assets/events/pitch-cafe-main.png"
+              src="./assets/events/pitch-cafe-main-1.png"
               alt="Pitch Cafe Banner"
               class="rounded-lg w-[550px] h-[550px]"
-              style="width: 612px; height: 791px"
+              style="width: 612px; height: 618px"
             />
           </div>
           <div class="w-1/2 space-y-10">
@@ -161,7 +168,8 @@
                 font-style: normal;
                 font-weight: 700;
                 font-size: 64px;
-                color: #cd773b;
+                color: #cd773b; 
+                font-family: 'FONTSPRING DEMO - Greycliff CF Heavy', sans-serif;
               "
             >
               Welcome to PitchCafé
@@ -200,11 +208,10 @@
                         </div> -->
           </div>
         </div>
-        <div class="retro" id="retro">
         <div class="my-10 space-y-5">
           <!-- gallery -->
           <h1
-            class="text-4xl heading"
+            class="text-5xl heading"
             style="
               /* width: 647px;
               height: 108px;
@@ -212,11 +219,13 @@
               top: 54px; */
               font-style: normal;
               font-weight: 900;
-              font-size: 74px;
+              font-size: 64px;
               line-height: 108px;
               /* identical to box height */
               letter-spacing: -0.05em;
               color: #cd773b;
+              font-family: 'ITC Avant Garde Gothic LT', sans-serif;
+              margin-top: 100px;
             "
           >
             PitchCafé 2.0: Year in retrospect
@@ -297,7 +306,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
         <div class="my-10 space-y-5">
           <!-- timeline -->
@@ -423,6 +431,62 @@
                             </tbody>
                         </table>
                     </div> -->
+        </div>
+        <div class="retro" id="retro">
+          <div class="my-10 space-y-5">
+            <!-- gallery -->
+            <h1
+              class="text-5xl heading"
+              style="
+                /* width: 647px;
+                height: 108px;
+                left: 416px;
+                top: 54px; */
+                font-style: normal;
+                font-weight: 900;
+                font-size: 64px;
+                line-height: 108px;
+                /* identical to box height */
+                letter-spacing: -0.05em;
+                color: #cd773b;
+                font-family: 'ITC Avant Garde Gothic LT', sans-serif;
+                margin-top: 100px;
+              "
+            >
+              Powered By
+            </h1>
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper flex">
+                <div class="swiper-slide w-[300px]">
+                  <div class="flex">
+                    <img
+                      src="./assets/powered-by/1 (1).png"
+                      alt="Slide 1"
+                      class="rounded-lg"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide w-[300px]">
+                  <div class="flex">
+                    <img
+                      src="./assets/powered-by/1 (2).png"
+                      alt="Slide 1"
+                      class="rounded-lg"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide w-[300px]">
+                  <div class="flex">
+                    <img
+                      src="./assets/powered-by/1 (3).png"
+                      alt="Slide 1"
+                      class="rounded-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="my-10 space-y-5" id="register">
           <!-- form -->
@@ -777,7 +841,8 @@
             <div class="flex justify-center items-center my-10">
               <a href="https://unstop.com/o/9u7TdBs?lb=hE4DOqM">
                 <button
-                  class="rounded-full text-white font-bold bg-green-500 py-2 px-7"
+                  class="rounded-full text-white font-bold bg-sky-500 py-5 px-20"
+                  style="background-color:#65989B; font-family: 'Roboto', sans-serif; margin-top: 100px; font-size: 25px;"
                 >
                   Register Now
                 </button>
@@ -877,8 +942,8 @@
     <script>
       var swiper3 = new Swiper(".mySwiper3", {
         direction: "horizontal",
-        slidesPerView: 4,
-        spaceBetween: 30,
+        slidesPerView: 2,
+        spaceBetween: 40,
         centeredSlides: true,
         loop: true,
         autoplay: {
